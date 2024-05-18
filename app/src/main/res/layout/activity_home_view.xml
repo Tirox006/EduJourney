@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeView"
+    android:orientation="vertical"
+    android:background="@drawable/back_ground2">
+
+
+    <include
+        android:id="@+id/toolbarInclude"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeMessage_id"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="60dp"
+        android:textColor="@color/deep_lemon"
+        android:text="@string/welcome_message"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/create_profile_message_id"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/create_profile_message"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        />
+
+
+    <Button
+        android:id="@+id/create_profile_button_id"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/deep_lemon"
+        android:text="@string/create_profile_button_message"
+        android:background="@color/my_button_color"
+         />
+
+
+</LinearLayout>
